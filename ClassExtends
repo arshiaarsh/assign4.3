@@ -1,0 +1,30 @@
+class A
+{
+   static  void test()
+    {
+        System.out.printf("A");
+        C.test();
+    }
+}
+class B extends A
+{
+   static  void test()
+    {
+        System.out.printf("B");
+    }
+}
+class C extends B
+{
+   static void test()
+    {
+        System.out.printf("C");
+    }
+}
+class abc
+{
+    public static void main(String args[])
+    {
+        A a=new A();             
+        a.test();
+    }
+}
